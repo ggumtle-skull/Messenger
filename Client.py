@@ -15,12 +15,12 @@ def receive(sock):
 port = 8080
 
 clientSock = socket(AF_INET, SOCK_STREAM)
-clientSock.connect(('127.0.0.1',port))
+clientSock.connect(('127.0.0.1', port))
 
-print('접속완료')
+print('접속 완료')
 
-sender = Thread(target = send, args=(connectionSock,))
-receiver = Thread(target=receive, args=(connectionSock,))
+sender = Thread(target=send, args=(clientSock,))
+receiver = Thread(target=receive, args=(clientSock,))
 
 sender.start()
 receiver.start()
