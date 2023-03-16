@@ -13,7 +13,7 @@ def receive(sock):
         print('상대방 :', recvData.decode('utf-8'))
 
 
-port = 8080
+port = 8081
 
 serverSock = socket(AF_INET, SOCK_STREAM)
 serverSock.bind(('127.0.0.1', port))
