@@ -16,7 +16,7 @@ def receive(sock):
 port = 8081
 
 serverSock = socket(AF_INET, SOCK_STREAM)
-serverSock.bind(('127.0.0.1', port))
+serverSock.bind(('', port))
 serverSock.listen(3)
 
 print('%d번 포트로 접속 대기중...'%port)
