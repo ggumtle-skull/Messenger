@@ -12,7 +12,7 @@ root.geometry("540x380")  # 가로 * 세로
 txt = Text(root, width=20, height=3)
 txt.pack()
 
-btn = Button(root, text="click", command=btncmd())
+btn = Button(root, text="click", command=btncmd)
 btn.pack()
 
 root.mainloop()
